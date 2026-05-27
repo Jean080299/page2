@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEJUSA Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <h1>GEJUSA</h1>
+    <p>Micro Habit Tracker</p>
+
+    <button class="nav-btn active" data-section="dashboard">Dashboard</button>
+    <button class="nav-btn" data-section="habits">Hábitos</button>
+    <button class="nav-btn" data-section="stats">Estadísticas</button>
+  </aside>
+
+  <main class="content">
+
+    <section id="dashboard" class="section active-section">
+      <h2>Bienvenido</h2>
+      <div class="card">
+        <h3>Tu progreso diario</h3>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <p id="progressText">0% completado</p>
+      </div>
+    </section>
+
+    <section id="habits" class="section">
+      <h2>Mis Hábitos</h2>
+
+      <div class="add-habit">
+        <input type="text" id="habitInput" placeholder="Nuevo hábito">
+        <button id="addHabitBtn">Añadir</button>
+      </div>
+
+      <ul id="habitList"></ul>
+    </section>
+
+    <section id="stats" class="section">
+      <h2>Estadísticas</h2>
+
+      <div class="card">
+        <p>Total de hábitos: <span id="totalHabits">0</span></p>
+        <p>Hábitos completados: <span id="completedHabits">0</span></p>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

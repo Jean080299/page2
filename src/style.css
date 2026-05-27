@@ -1,0 +1,110 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#020617;
+  color:white;
+}
+
+.app{
+  display:flex;
+  min-height:100vh;
+}
+
+.sidebar{
+  width:260px;
+  background:#0f172a;
+  padding:30px;
+}
+
+.sidebar h1{
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+.sidebar p{
+  color:#94a3b8;
+}
+
+.content{
+  flex:1;
+  padding:40px;
+}
+
+.hero{
+  margin-bottom:40px;
+}
+
+.hero h2{
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+.hero p{
+  color:#94a3b8;
+}
+
+.add-box{
+  display:flex;
+  gap:15px;
+  margin-bottom:30px;
+}
+
+.add-box input{
+  flex:1;
+  padding:16px;
+  border:none;
+  border-radius:14px;
+}
+
+.add-box button{
+  padding:16px 24px;
+  border:none;
+  border-radius:14px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+}
+
+.habit-list{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.habit-card{
+  background:#0f172a;
+  padding:25px;
+  border-radius:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.habit-card p{
+  color:#94a3b8;
+  margin-top:8px;
+}
+
+.habit-card button{
+  padding:12px 20px;
+  border:none;
+  border-radius:12px;
+  background:#22c55e;
+  color:white;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+  .app{
+    flex-direction:column;
+  }
+
+  .sidebar{
+    width:100%;
+  }
+}
